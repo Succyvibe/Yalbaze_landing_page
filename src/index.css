@@ -5,5 +5,442 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=League+Spartan:wght@100;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Red+Rose:wght@400;600;700&display=swap");
 
 body {
-  font-family: "DM Sans", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Satoshi", sans-serif;
+  background: #121b27;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* .btn-border {
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, #5404ff, #bd3bd2);
+  border-image-slice: 1;
+  padding: 14px 16px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+
+  width: 190px;
+  height: 50px;
+  margin-top: 10px;
+} */
+
+.btn {
+  position: relative;
+  display: inline-block;
+  height: 45px;
+  width: 250px;
+  overflow: hidden;
+
+  /* margin: 17px 20px; */
+  border-radius: 100px;
+}
+
+.btn .inner {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  left: 0;
+
+  background: -webkit-linear-gradient(right, #5404ff, #bd3bd2);
+  z-index: -1;
+}
+
+.btn button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+}
+
+/* =================FORM BUTTON========= */
+
+.formBtn {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 288px;
+  overflow: hidden;
+
+  /* margin: 17px 20px; */
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.formBtn .inner {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  left: 0;
+
+  background: -webkit-linear-gradient(right, #5404ff, #bd3bd2);
+  z-index: -1;
+}
+
+.formBtn button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  z-index: 10;
+}
+
+.elipseSmall {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    112.92deg,
+    #5404ff 18.35%,
+    rgba(189, 59, 210, 0.94) 71.49%
+  );
+  border-radius: 100px;
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  position: absolute;
+  top: 55px;
+  right: 100px;
+}
+.elipseSmallTwo {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    112.92deg,
+    #5404ff 18.35%,
+    rgba(189, 59, 210, 0.94) 71.49%
+  );
+  border-radius: 100px;
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  position: absolute;
+  top: 6%;
+  left: 2%;
+}
+.elipseBlur {
+  /* width: 400px;
+  height: 400px; */
+  background: linear-gradient(
+    112.92deg,
+    #5404ff 18.35%,
+    rgba(189, 59, 210, 0.94) 71.49%
+  );
+  /* border-radius: 400px; */
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  position: absolute;
+  top: 9%;
+  right: 0;
+  filter: blur(15px);
+
+  width: 300px;
+  height: 400px;
+  border-radius: 12rem 0 0 12rem;
+  background-color: purple;
+  display: none;
+}
+
+.elipse {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    112.92deg,
+    #5404ff 18.35%,
+    rgba(189, 59, 210, 0.94) 71.49%
+  );
+  border-radius: 100px;
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  position: absolute;
+  top: 2%;
+  left: 4%;
+  display: none;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media screen and (min-width: 340px) {
+  .formBtn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 330px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 420px) {
+  .formBtn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 380px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .elipseSmall {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 55px;
+    right: 370px;
+  }
+
+  .elipseSmallTwo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
+  .btn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 416px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+  }
+
+  .formBtn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 410px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+    z-index: 2;
+  }
+
+  .elipse {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 17%;
+    left: 4%;
+    display: block;
+    z-index: -10;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .elipseSmall {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 45px;
+    right: 250px;
+  }
+
+  .formBtn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 386px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .elipseSmall {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 48px;
+    right: 370px;
+  }
+
+  .elipseSmallTwo {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 443px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .elipseSmall {
+    width: 102px;
+    height: 102px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 55px;
+    right: 370px;
+  }
+
+  .elipseSmallTwo {
+    width: 102px;
+    height: 102px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 443px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+  }
+
+  .elipse {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    border-radius: 100px;
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 2%;
+    left: -5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .elipseBlur {
+    /* width: 400px;
+    height: 400px; */
+    background: linear-gradient(
+      112.92deg,
+      #5404ff 18.35%,
+      rgba(189, 59, 210, 0.94) 71.49%
+    );
+    /* border-radius: 400px; */
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    position: absolute;
+    top: 12%;
+    right: -14%;
+    filter: blur(15px);
+
+    width: 280px;
+    height: 400px;
+    border-radius: 12rem 0 0 12rem;
+    background-color: purple;
+    display: block;
+  }
+
+  .formBtn {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 510px;
+    overflow: hidden;
+
+    /* margin: 17px 20px; */
+    border-radius: 100px;
+    z-index: 2;
+  }
 }
