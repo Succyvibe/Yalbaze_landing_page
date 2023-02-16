@@ -7,7 +7,7 @@ import starSmall from "../img/StarSm.png";
 import highlight from "../img/Highlight.png";
 import bg from "../img/elipseBg.png";
 
-import Footer from "./Footer";
+
 import Form from "./Form";
 import ConsultationForm from "./ConsultationForm";
 
@@ -130,7 +130,7 @@ const Main = () => {
         </div>
       </section>
 
-      <Footer />
+ 
     </main>
   );
 };
