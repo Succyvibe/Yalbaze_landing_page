@@ -5,7 +5,7 @@ import phoneIcon from "../img/phone.png";
 const Footer = () => {
   return (
     <footer>
-      <section className="mt-[80px] xl:mt-[140px] border-t py-8 xl:pt-8 xl:pb-16">
+      <section className="mt-[80px] xl:mt-[140px] border-t py-8 xl:pt-8 xl:pb-16 max-w-[1240px] mx-auto">
         <div className="w-full lg:grid lg:grid-cols-2 xl:grid-cols-3 justify-between items-center px-4 xl:px-0 space-y-4">
           <div className="flex space-x-4 items-center md:items-start">
             <div>
