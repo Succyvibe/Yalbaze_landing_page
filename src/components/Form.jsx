@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import hook from "../img/hookLine.png";
 import userIcon from "../img/profilecircle.png";
+import Button from "./Button";
 import PopUp from "./PopUp";
 
 const Form = () => {
@@ -52,12 +53,7 @@ const Form = () => {
         <div className="flex justify-center md:block">
           <div class="btn">
             <div className="inner"></div>
-            <button
-              className=" leading-[22px] text-[16px] font-[700]"
-              onClick={(prevState) => setToggleModal(!prevState)}
-            >
-              Get early access
-            </button>
+            <Button text="Get early access" />
           </div>
         </div>
       </form>

@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../img/logo.png";
 import btn from "../img/btn-border.png";
+import Logo from "./Logo";
 // import smallelipse from "../img/elipseLarge.png";
 
 const Header = () => {
@@ -9,9 +9,7 @@ const Header = () => {
       <div className="lg:pt-10">
         <div className="w-full flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="w-[100px] xl:w-[231px]">
-            <img src={logo} alt="logo" className="w-full" />
-          </div>
+          <Logo />
 
           <div className="w-[100px] xl:w-[190px]">
             <button className="w-full border-none outline-none">

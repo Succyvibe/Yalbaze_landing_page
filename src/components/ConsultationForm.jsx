@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 import Input from "./Input";
 import PopUp from "./PopUp";
 
@@ -40,12 +41,7 @@ const ConsultationForm = () => {
         <div className="w-full">
           <div class="formBtn ">
             <div className="inner"></div>
-            <button
-              onClick={(prevState) => setToggleModal(!prevState)}
-              className=" leading-[22px] text-[16px] font-[700]"
-            >
-              Send Request
-            </button>
+            <Button text="Send Request" />
           </div>
         </div>
       </form>
